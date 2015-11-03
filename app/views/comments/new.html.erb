@@ -1,0 +1,32 @@
+<div class="contents row" >
+  <div class="content_post" style="background-image: url(<%= @tweet.image %>);">
+    <p>
+      <%= br(@tweet.text) %>
+    </p>
+    <span class="name"><%= @tweet.name %></span>
+  </div>
+</div>
+
+<% @comment.each do |comment| %>
+  <div class="contents row" >
+    <div class="comment">
+      <p>
+        <%= br(comment.text) %><hr>
+      </p>
+      <span class="name"><%= comment.place %></span>
+      <span class="name"><%= comment.username %></span>
+    </div>
+   </div>
+<% end %>
+
+<div class="contents row">
+  <%= form_tag(tweet_comments_path, method: :post) do %>
+    <h3>
+      投稿する
+    </h3>
+    <input placeholder="Nickname" type="text" name="username">
+    <input placeholder="Place" type="text" name="place">
+    <textarea cols="30" name="text" placeholder="あなたの考えを教えて" rows="10"></textarea>
+    <input type="submit" value="SENT">
+  <% end %>
+</div>

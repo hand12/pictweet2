@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151022082605) do
+ActiveRecord::Schema.define(version: 20151030074929) do
+
+  create_table "comments", force: :cascade do |t|
+    t.string   "tweet_id",   limit: 255
+    t.text     "text",       limit: 65535
+    t.string   "username",   limit: 255
+    t.string   "place",      limit: 255
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
 
   create_table "tweets", force: :cascade do |t|
     t.string   "name",       limit: 255

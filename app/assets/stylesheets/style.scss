@@ -365,3 +365,11 @@ footer {
     text-align: center;
   }
 }
+
+.comment {
+  box-shadow: 0 0 10px rgba($black,0.2);
+    background-color: $white;
+    box-sizing: border-box;
+    padding: 10px;
+    
+}
