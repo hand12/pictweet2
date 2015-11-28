@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151030074929) do
+ActiveRecord::Schema.define(version: 20151116143839) do
 
   create_table "comments", force: :cascade do |t|
     t.string   "tweet_id",   limit: 255
@@ -25,9 +25,11 @@ ActiveRecord::Schema.define(version: 20151030074929) do
   create_table "tweets", force: :cascade do |t|
     t.string   "name",       limit: 255
     t.text     "text",       limit: 65535
-    t.text     "image",      limit: 65535
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
+    t.text     "maintext",   limit: 65535
+    t.text     "place",      limit: 65535
+    t.string   "image",      limit: 255
   end
 
 end

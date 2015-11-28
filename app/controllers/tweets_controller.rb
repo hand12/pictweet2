@@ -4,15 +4,17 @@ class TweetsController < ApplicationController
   end
 
   def new
+    @tweet = Tweet.new
   end
 
   def create
     Tweet.create(tweet_params)
+    # binding.pry
   end
 
   private
   def tweet_params
-    params.permit(:name, :image, :text)
+    params.require(:tweet).permit(:name, :image, :text, :maintext, :place)
   end
 
 end

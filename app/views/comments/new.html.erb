@@ -1,20 +1,34 @@
+<script>
+  $('#something').click(function() {
+  location.reload();
+  location.href = '/';
+  });
+</script>
+
 <div class="contents row" >
   <div class="content_post" style="background-image: url(<%= @tweet.image %>);">
+    
+  </div>
+  <div class="maintext">
     <p>
-      <%= br(@tweet.text) %>
+      <h2><%= br(@tweet.text) %></h2>
+      <hr>
+      <%= @tweet.maintext %>
+      <hr>
+      <span class="name"><%= @tweet.name %></span>
+      <span class="place"><%= @tweet.place %></span>
     </p>
-    <span class="name"><%= @tweet.name %></span>
   </div>
 </div>
 
-<% @comment.each do |comment| %>
+<% @tweet.comments.each do |comment| %>
   <div class="contents row" >
     <div class="comment">
       <p>
         <%= br(comment.text) %><hr>
       </p>
       <span class="name"><%= comment.place %></span>
-      <span class="name"><%= comment.username %></span>
+      <span class="username"><%= comment.username %></span>
     </div>
    </div>
 <% end %>

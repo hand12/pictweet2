@@ -60,7 +60,7 @@ a {
   color: $dark;
   @extend .transition;
   &:hover {
-    color: $accent;
+    color: #d2b48c;
   }
 }
 
@@ -89,15 +89,15 @@ a {
 .btn {
     @include basePadding(8px 20px);
     font-size: 14px;
-    border: 2px solid $accent;
-    color: $accent;
+    border: 2px solid #808080;
+    color: #808080;
     font-weight: bold;
     text-align: center;
     border-radius: 3px;
     display: inline-block;
   &:hover {
-    border-color: lighten($accent, 15%);
-    color: lighten($accent, 15%);
+    border-color: lighten(#d2b48c, 15%);
+    color: lighten(#d2b48c, 15%);
   }
 }
 
@@ -142,7 +142,7 @@ header.header {
       text-align: right;
       a.post {
         @extend .btn;
-        width: 120px;
+        width: 150px;
         display: inline-left;
         margin-left: 10px;
       }
@@ -169,7 +169,7 @@ header.header {
         margin-left: -4px;
       }
       &:hover ul {
-        color: $accent;
+        color: #d2b48c;
         display: block;
       }
     }
@@ -202,6 +202,9 @@ header.header {
     top: 30%;
     bottom: 0;
     right: 0;
+    .place {
+      float: right;
+      }
   }
   footer {
     position: absolute;
@@ -222,6 +225,19 @@ div.contents.row {
   }
   .new_user{
   font-family: "游ゴシック", "YuGothic";
+  }
+  div.maintext{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    padding: 10px 30px 10px;
+    h2 {
+    font-size: 1.5em;
+    }
+    .place {
+      float: right;
+      }
   }
   div.content_post {
     @include boxBase(20px 0 ,30px);
@@ -337,13 +353,13 @@ div.contents.row {
     }
     input[type="submit"] {
       @extend .transition;
-      background-color: $accent;
+      background-color: #808080;
       border-radius: 20px;
       color: #fff;
       border: 0;
       font-size: 18px;
       &:hover {
-        background-color: lighten($accent, 10%);
+        background-color: lighten(#d2b48c, 10%);
       }
     }
   }
@@ -362,14 +378,20 @@ footer {
   @include boxBase;
   color: $gray;
   p {
+    font-family: "游ゴシック", "YuGothic";
     text-align: center;
   }
 }
-
-.comment {
-  box-shadow: 0 0 10px rgba($black,0.2);
-    background-color: $white;
-    box-sizing: border-box;
-    padding: 10px;
-    
+div.contents.row {
+  .comment {
+    box-shadow: 0 0 10px rgba($black,0.2);
+      background-color: $white;
+      box-sizing: border-box;
+      margin: 10px 0;
+      padding: 10px;
+      .username {
+      float: right;
+      }
+      
+  }
 }
