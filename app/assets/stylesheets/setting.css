@@ -64,6 +64,15 @@ html {
 body {
   margin: 0;
 }
+.top_image{
+  /*background-image: url("images/paralym_pick.png");*/
+  margin: 20px auto;
+  text-align: center;
+  /*margin-bottom: 50px;*/
+  width: 800px;
+  height: 100px;
+}
+
 
 /* ==========================================================================
  * Links
@@ -138,7 +147,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, serif;
+  /*font-family: monospace, serif;*/
   font-size: 1em;
 }
 
@@ -608,5 +617,237 @@ ul li {
   .row .grid-4 {
     width: 48.2% !important;
   }
+}
+
+.photo{
+  width: 100px ;
+  height: auto;
+  margin-left: 40px;
+}
+
+.midasi{
+  display: block;
+  color:dimgray;
+  margin: 50px;
+  margin: 0 auto;
+  width: 180px;
+}
+
+#aboutus{
+  cursor: pointer;
+  color:dimgray;
+  margin: 0 auto;
+  width: 120px;
+}
+
+.memlist{
+  margin: 0 auto;
+  width: 40%;
+  padding: 10px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+
+}
+
+#mem{
+  display:table;
+  table-layout: fixed;
+
+  color:dimgray;
+  margin: 0 auto;
+  width: 80px;
+}
+
+.aboutbox p{
+  margin: 0 auto;
+}
+
+.botton1{
+  width:800px;
+  /*height: 615px;  */
+  background-image:url('../assets/topgazou1.JPG');
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.botton1 p{
+  margin: 0 auto;
+  /*width: 140px;*/
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#inf{
+  /*width: 200px;*/
+  margin: 0 auto;
+  margin-top: 150px;
+  text-align: center;
+}
+
+#title_tak{
+  display: block;
+  /*display: table;*/
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+#bousentop{
+  display: block;
+  width:800px;
+  height:0px;
+  margin: 0 auto;
+  margin-top:70px;    
+}
+#bousenbottom{
+  display: block;
+  width:800px;
+  height:0px;
+  margin: 0 auto;
+  margin-top:20px; 
+}
+
+#team{
+/*  width:180px;*/
+  /*position: absolute;*/
+  margin-top:5px;
+  /*margin-left:550px;*/
+  font-family: "YuGothic","游ゴシック", "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;  
+}
+
+#footer p{
+  text-align: right;
+}
+
+.cicon {
+  width:150px;
+  position: absolute;
+  cursor: pointer;
+}
+
+#botton1 {
+  width:150px;
+  height: 150px;
+  position: absolute;
+  margin-left:155px
+}
+
+#icon1 {
+  width:150px;
+  position: absolute;
+}
+
+#botton2 {
+  width:150px;
+  height:150px;
+  position: absolute;
+  margin-left:325px;
+
+}
+
+#icon2 {
+  width:150px;
+  position: absolute;
+
+}
+
+#botton3 {
+  width:150px;
+  height:150px;
+  position: absolute;
+  margin-left:495px;
+
+}
+
+#icon3 {
+  width:150px;
+  position: absolute;
+
+}
+
+
+#botton4 {
+  width:150px;
+  height:150px;
+  position: absolute;
+  margin-left:235px; 
+  margin-top: 140px
+
+}
+
+#icon4 {
+  width:150px;
+  position: absolute;
+
+}
+
+#botton5 {
+  width:150px;
+  height:150px;
+  position: absolute;
+  margin-left:415px; 
+  margin-top: 140px
+ 
+}
+
+#icon5 {
+  width:150px;
+  position: absolute;
+
+}
+
+.wrapper {
+  width: 800px;  
+  margin: 0 auto;  
+}
+
+#footer {
+  margin: 0 auto;
+  position: relative;
+  width: 800px;
+  /*margin-bottom: 100px;*/
+  margin-top: 340px;  
+}
+
+.botton3 p{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mainbox {
+  margin-bottom: 30px;
+  font-family: "游ゴシック";
+}
+
+#top {
+  margin: 10px auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#ex {
+  margin: 10px auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+#readme {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.botton4 p{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.botton5 p{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.twitter-share-button{
+  margin: 0 auto;
 }
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */

@@ -1,0 +1,20 @@
+current directory: /home/para/public_html/pictweet2/vendor/bundle/ruby/2.1.0/gems/byebug-8.2.1/ext/byebug
+/home/para/.rbenv/versions/2.1.3/bin/ruby -r ./siteconf20151128-23817-1aq0ro2.rb extconf.rb
+creating Makefile
+
+current directory: /home/para/public_html/pictweet2/vendor/bundle/ruby/2.1.0/gems/byebug-8.2.1/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/para/public_html/pictweet2/vendor/bundle/ruby/2.1.0/gems/byebug-8.2.1/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling threads.c
+compiling context.c
+compiling locker.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/para/public_html/pictweet2/vendor/bundle/ruby/2.1.0/gems/byebug-8.2.1/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20151128-23817-7xa6c4/byebug
+installing default byebug libraries

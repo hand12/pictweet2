@@ -1,4 +1,143 @@
- <div class="contents row" >
+  
+<div class="wrapper">
+<!-- <hr id="bousentop"> -->
+<div class="top_image">
+  <%= image_tag '../assets/paralym_pick_hr.png' %>
+</div>
+
+<div class="mainbox botton2">
+  <div class="contents row" >
+  <p id="top">
+  ここでは投稿されたTOPICの一覧が表示さます。<br>
+  気になるTOPICをクリックしてあなたも議論に参加しましょう!</p>
+  <p id="ex">▼使用上の注意</p>
+    <div id="readme">
+      <p>
+      当SNSはパラリンピックの正しい認識や注目を広めてもらう目的で<br>
+      制作されています。<br><br>
+      節度のあるコミュニケーションや、マナーを守るなど、よろしくお願いします。<br>
+      誹謗中傷・全く関係のない書き込み・荒らし行為などは決して行わないようにお願いします。</p><br><br> 
+    </div>
+  <hr>
     <%= render partial: "tweet", collection: @tweets %>
     <%= paginate(@tweets) %>
   </div>
+</div>
+
+<div class="mainbox botton3">
+  <div class="contents row">
+      <!-- <p>パラリンピックは1960年第1回ローマ大会開催時退役軍人のリハビリテーションが目的として行われた。<br><br>
+        しかし近年、競技器具の進歩やトレーニング方法の改善により競技性が高まり、プロ選手も現れるほどになっている。<br><br>
+        2011年世界陸上選手権では義足であるオスカービストリウス選手が健常者とともに出場し、準決勝進出を果たした。<br><br>
+        パラリンピックを取り巻く状況は著しく変化しておりさらなる注目が期待される。</p><br> -->
+
+        <p>パラリンピックは1960年第1回ローマ大会開催時</p><br>
+        <p>退役軍人のリハビリテーションが目的として行われた。</p><br>
+        <p>しかし近年、競技器具の進歩やトレーニング方法の改善により</p><br>
+        <p>競技性が高まり、プロ選手も現れるほどになっている。</p><br>
+        <p>2011年世界陸上選手権では義足であるオスカービストリウス選手が</p><br>
+        <p>健常者とともに出場し、準決勝進出を果たした。</p><br>
+        <p>パラリンピックを取り巻く状況は著しく変化しており</p><br>
+        <p>さらなる注目が期待される。</p><br>
+
+      <div id="sankougazo">
+          <%= image_tag("../assets/photo1.JPG", :class => "photo", :'data-action' => 'zoom') %>
+          <%= image_tag("../assets/photo2.JPG", :class => "photo", :'data-action' => 'zoom') %>
+          <%= image_tag("../assets/photo3.JPG", :class => "photo", :'data-action' => 'zoom') %>
+          <%= image_tag("../assets/photo4.JPG", :class => "photo", :'data-action' => 'zoom') %>
+      </div>
+  </div>
+</div>
+
+<div class="mainbox botton4">
+  <div class="contents row">
+    <p class="midasi">about PARALYM PICK</p><br><br>
+    <!-- <p>当サイトは、知っているようで実はあまり知らないパラリンピックについての情報を共有するためのSNSです。</p><br>
+    <p>5つのメニューのうち「PICK」から様々なトピックを投稿・閲覧・コメントすることができます。</p><br>
+    <p>パラリンピックについての疑問や情報、ゆかりのある写真など様々なことを共有しパラリンピックについての関心を高めましょう。</p><br>
+    <br><br> -->
+    <p>当サイトは、知っているようで実はあまり知らないパラリンピックについての情報を共有するためのSNSです。</p><br>
+    <p>5つのメニューのうち「PICK」から様々なトピックを投稿・閲覧・コメントすることができます。</p><br>
+    <p>パラリンピックについての疑問や情報、ゆかりのある写真など様々なことを共有しパラリンピックについての関心を高めましょう。</p><br>
+    <br><br>
+    <p id="aboutus">▼about us</p><br><br>
+    <div id="member">
+      <p>このサイトは、首都大学東京と宮城大学の学生によって過去から現在、そして未来へと情報をつなぐコンテンツとして製作されました。</p><br><br>
+      <p id="mem">member</p><br><br>
+      <div class="memlist">
+        <p>山下悠介　中原貴文</p><br>
+        <p>小野寺柚佳　佐藤彩　田口楓</p><br>
+        <p>最上みづき　籾山祐実</p><br> 
+      </div>           
+    </div>
+  </div>
+</div>
+
+<div class="mainbox botton1">
+  <div class="contents row">
+    <%= image_tag("../assets/top.png", :id => "title_tak") %>
+    <p id="inf">▼New Information▼</p><br>
+    <p >coming soon...</p>
+  </div>
+</div> 
+
+<div class="mainbox botton5">
+  <div class="contents row">
+    <p>coming soon...</p>
+  </div>
+</div> 
+
+  <!-- <div class="buttons"> -->
+
+        <div id="botton1" class="sbtn">
+          <div class="cicon" >
+            <%= image_tag("../assets/changeicon1.png") %>
+          </div>
+          <div id="icon1">
+            <%= image_tag("../assets/icon1.png") %>
+          </div>
+        </div>
+
+
+        <div id="botton2" class="sbtn">
+          <div class="cicon" >
+            <%= image_tag("../assets/changeicon2.png") %>
+          </div>
+          <div id="icon2">
+            <%= image_tag("../assets/icon2.png") %>
+          </div>
+        </div>
+
+        <div id="botton3" class="sbtn">
+          <div class="cicon" >
+            <%= image_tag("../assets/changeicon3.png") %>
+          </div>
+          <div id="icon3">
+            <%= image_tag("../assets/icon3.png") %>
+          </div>
+        </div>
+
+        <div id="botton4" class="sbtn">
+          <div class="cicon" >
+            <%= image_tag("../assets/changeicon4.png") %>
+          </div>
+          <div id="icon4">
+            <%= image_tag("../assets/icon4.png") %>
+          </div>
+        </div>
+
+        <div id="botton5" class="sbtn">
+          <div class="cicon" >
+            <%= image_tag("../assets/changeicon5.png") %>
+          </div>
+          <div id="icon5">
+            <%= image_tag("../assets/icon5.png") %>
+          </div>
+        </div>
+
+        
+  <div id="footer">
+    <hr id="bousenbottom">
+    <p id="team">TMU&MYU PROJECT</p>
+  </div>
+</div>
