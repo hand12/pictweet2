@@ -15,7 +15,7 @@ default: &default
   pool: 5
   username: root
   password:
-  socket: /var/lib/mysql/mysql.sock
+  socket: /tmp/mysql.sock
 
 development:
   <<: *default
@@ -49,7 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: paralympick
-  username: phpmyadmin
-  password: 3nZXPiFC4pNhscv4
-  socket: /var/lib/mysql/mysql.sock
+  database: pictweet2_production
+  username: pictweet2
+  password: <%= ENV['PICTWEET2_DATABASE_PASSWORD'] %>
