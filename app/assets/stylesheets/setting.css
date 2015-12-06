@@ -850,4 +850,22 @@ ul li {
 .twitter-share-button{
   margin: 0 auto;
 }
+
+.link {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.links {
+  padding: 10px;
+  text-align: center; 
+}
+
+.linkbox {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px; 
+}
+
+
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
