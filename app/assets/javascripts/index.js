@@ -1,18 +1,5 @@
 $(function () {
-  // $(window).on("load",function(){
-  //   $('.mainbox').hide();
-  //   $("#member").hide();
-  //   $("#readme").hide();
-  //   $('.botton1').show(1000);
-  //   $("#top_tak").hide();
-  //   $("#top_tak").fadeIn(3000);
-  //   $(".sbtn").on("click", function(){
-  //     $('.mainbox').slideUp(500);
-  //     $('.' + this.id).show(500);
-  //     });
-  //   });
-
-$(window).ready(function(){
+  $(window).on("load",function(){
     $('.mainbox').hide();
     $("#member").hide();
     $("#readme").hide();
@@ -22,8 +9,8 @@ $(window).ready(function(){
     $(".sbtn").on("click", function(){
       $('.mainbox').slideUp(500);
       $('.' + this.id).show(500);
-      });
     });
+  });
 
     // $(".sbtn").on("click", function(){
     //   $('.mainbox').slideUp(500);
