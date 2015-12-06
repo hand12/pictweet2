@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
-  database: pictweet2_production
-  username: pictweet2
-  password: <%= ENV['PICTWEET2_DATABASE_PASSWORD'] %>
+  database: paralympick
+  username: phpmyadmin
+  password: 3nZXPiFC4pNhscv4
+  socket: /var/lib/mysql/mysql.sock
